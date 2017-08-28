@@ -1,0 +1,8 @@
+ {{#each paths}}
+ 	<path id="{{id}}" d="{{d}}" fill="{{fill}}" stroke-width="{{strokeWidth}}" stroke="{{stroke}}" stroke-linecap="{{strokeLinecap}}">
+	{{#each animation}}
+		<animate attributeName="{{attributeName}}" id="{{id}}" dur="{{dur}}" from="{{from}}" to="{{to}}" begin="{{begin}}" repeatCount="{{repeatCount}}"/> 
+	{{/each}}
+	</path>
+
+{{/each}}
